@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MelodyOnDemand</title>
+  <meta name="description" content="Create your own melody - Your story your song.">
+  <style>
+    :root {
+      --bg: #120020;
+      --card: #1c0f2d;
+      --accent: #f73ca1;
+      --text: #f5e9ff;
+      --sub: #c9b6e6;
+    }
+    * {box-sizing:border-box;font-family: 'Segoe UI', Tahoma, sans-serif;}
+    body {margin:0;background:linear-gradient(180deg,var(--bg),#25083a);color:var(--text);line-height:1.6}
+    header {padding:20px 16px;display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:0 auto}
+    nav a {color:var(--text);margin-left:18px;text-decoration:none;font-weight:500}
+    nav a:hover {color:var(--accent);}
+    .brand img {height:60px;}
+    .hero {max-width:1100px;margin:40px auto;padding:28px;text-align:center}
+    h1 {font-size:34px;margin:0 0 10px}
+    p.lead {font-size:18px;color:var(--sub);margin:0 0 20px}
+    .btn {display:inline-block;padding:12px 20px;margin:8px;border-radius:10px;background:var(--accent);color:#fff;font-weight:600;text-decoration:none;box-shadow:0 4px 12px rgba(247,60,161,0.4)}
+    .btn:hover {background:#ff5fb9}
+    section {max-width:800px;margin:40px auto;padding:28px;background:var(--card);border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,0.4);text-align:center}
+    footer {max-width:1100px;margin:40px auto 20px auto;padding:16px;text-align:center;color:#aaa;font-size:14px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="logo.png" alt="MelodyOnDemand Logo">
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <h1>Create your own melody</h1>
+    <p class="lead">Your story • Your song</p>
+    <a class="btn" href="#contact">Get in Touch</a>
+  </main>
+
+  <section id="about">
+    <h2>About MelodyOnDemand</h2>
+    <p>We create personalized songs inspired by your story. Whether it’s for a birthday, wedding, or any special moment, 
+       your emotions become a melody that lasts forever.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <strong>Mukki.artistic@gmail.com</strong></p>
+    <p>WhatsApp: <strong><a href="https://wa.me/919667661667" style="color:var(--accent);text-decoration:none;">9667661667</a></strong></p>
+    <a class="btn" href="mailto:Mukki.artistic@gmail.com">Email Us</a>
+    <a class="btn" href="https://wa.me/919667661667">WhatsApp</a>
+  </section>
+
+  <footer>
+    © <span id="yr"></span> MelodyOnDemand • All rights reserved
+  </footer>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
